@@ -26,7 +26,7 @@ faq:
 
 A small living room has one unfair advantage: it takes about two gallons of paint to completely change how it feels. No new sofa, no renovation, no landlord drama, just a color that makes the walls step back and the light stay a little longer. The trick is choosing a shade that works *with* a small footprint instead of apologizing for it.
 
-Below are the twelve colors we reach for again and again in compact living rooms, organized from the safest warm whites to two brave, deep shades that, honestly, make some small rooms feel bigger than any white can. Every pick includes the undertone trap to watch for, because in a small room you sit close to your walls, and undertones are nowhere to hide.
+Below are the twelve colors we reach for again and again in compact living rooms, the heart of our [paint color guides for small spaces](/category/paint-colors), organized from the safest warm whites to two brave, deep shades that, honestly, make some small rooms feel bigger than any white can. Every pick includes the undertone trap to watch for, because in a small room you sit close to your walls, and undertones are nowhere to hide.
 
 ## The warm whites (the safest place to start)
 
@@ -88,7 +88,7 @@ Hale Navy is a deep, classic navy that behaves the same way, walls recede, brass
 
 ### 12. Your landlord's white, warmed up without repainting
 
-If painting is not allowed, you can still steal most of the effect: choose one of the whites above for your largest textiles instead. A White Dove-toned rug, Alabaster-cream curtains hung wall-to-wall, and warm 2700K bulbs will warm a cold rental white by a full shade, and it all leaves with you. When you do get permission, you will already know your color.
+If painting is not allowed, you can still steal most of the effect, especially alongside [no-drill decor ideas that protect your deposit](/blog/no-drill-renter-friendly-decor-ideas): choose one of the whites above for your largest textiles instead. A White Dove-toned rug, Alabaster-cream curtains hung wall-to-wall, and warm 2700K bulbs will warm a cold rental white by a full shade, and it all leaves with you. When you do get permission, you will already know your color.
 
 > The rule underneath all twelve: in a small room, light is square footage. Pick the color that keeps the most light in the room, and test it on two walls, for one full day, before you commit.
 
@@ -100,4 +100,4 @@ If painting is not allowed, you can still steal most of the effect: choose one o
 4. **Paint the ceiling** the same color or one step lighter to lift the room.
 5. **Use eggshell or satin finish** so the walls give a little light back.
 
-Do that, and your small living room will not just look bigger, it will stop feeling like a compromise at all.
+Do that, and your small living room will not just look bigger, it will stop feeling like a compromise at all. And if clutter is the other half of the problem, the [organization systems that give a small living room its space back](/blog/small-living-room-organization-ideas) pick up exactly where the paint leaves off.

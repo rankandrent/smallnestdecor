@@ -22,7 +22,7 @@ faq:
     a: "Less than most people expect. The first systems, trays and three lidded baskets, cost almost nothing if you start with trays and baskets you already own; bought new, a few decent baskets are usually the only spend of the first weekend. The real money sits in storage furniture (system 4), and that should only be bought when a piece genuinely needs replacing anyway."
 ---
 
-A small living room does not have a space problem. It has a *systems* problem. The room is asked to be a lounge, an office, a dining room and a guest room, and without systems, all four jobs dump their belongings on the same three flat surfaces. The good news: organization scales down beautifully. These ten systems are the ones we see work again and again in real small living rooms, ordered from the Saturday-morning easy to the weekend project.
+A small living room does not have a space problem. It has a *systems* problem. The room is asked to be a lounge, an office, a dining room and a guest room, and without systems, all four jobs dump their belongings on the same three flat surfaces. The good news: organization scales down beautifully. These ten systems, the core of our [organization and storage ideas for small apartments](/category/organization-storage), are the ones we see work again and again in real small living rooms, ordered from the Saturday-morning easy to the weekend project.
 
 ## 1. Give the room zones, then let the zones hold things
 
@@ -44,7 +44,7 @@ When square footage is fixed, every new piece must do two jobs. The heroes of th
 
 ## 5. Use the wall like it is floor space
 
-Floor space is spent; wall space in most small living rooms is nearly untouched. A single floating shelf above the sofa holds the books and plants currently colonizing the side tables. A narrow picture ledge turns a blank wall into a rotating display that takes four centimeters of depth. Hooks behind the door take bags, headphones and the dog lead. The rule: anything that can hang, should hang, the floor is for feet and furniture legs.
+Floor space is spent; wall space in most small living rooms is nearly untouched. A single floating shelf above the sofa holds the books and plants currently colonizing the side tables. A narrow picture ledge turns a blank wall into a rotating display that takes four centimeters of depth. Hooks behind the door take bags, headphones and the dog lead. Renting, so the drill stays in its box? Our [no-drill decor ideas for hanging and storage](/blog/no-drill-renter-friendly-decor-ideas) cover the adhesive and tension versions of every trick in this section. The rule: anything that can hang, should hang, the floor is for feet and furniture legs.
 
 ## 6. The under-sofa and under-furniture audit
 
@@ -72,4 +72,4 @@ Systems hold the room together; rituals keep the systems alive. The small-living
 
 ## Where should you start this weekend?
 
-Start with system 2 (trays) and system 3 (three baskets), together they cost almost nothing and change the room by Sunday lunch. Next weekend, audit the under-furniture space (system 6) and the door (system 8). Save the storage furniture (system 4) for when something genuinely needs replacing. Small rooms reward sequence, not shopping sprees.
+Start with system 2 (trays) and system 3 (three baskets), together they cost almost nothing and change the room by Sunday lunch. Next weekend, audit the under-furniture space (system 6) and the door (system 8). Save the storage furniture (system 4) for when something genuinely needs replacing. Small rooms reward sequence, not shopping sprees. And once the systems are holding, the cheapest finishing touch is on the walls themselves: the right [paint colors that make a small living room look bigger](/blog/paint-colors-that-make-a-small-living-room-look-bigger) make an organized room feel twice its size.

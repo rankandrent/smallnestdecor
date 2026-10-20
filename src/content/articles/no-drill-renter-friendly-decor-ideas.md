@@ -43,7 +43,7 @@ products:
 
 Every renter knows the feeling: a home that is technically yours from the first to the last of the month, and visually someone else's the whole time. The beige is not your beige. The walls are bare because the lease used the word "holes" in bold. Here is the good news the decor industry took a decade to learn: almost everything a homeowner does with a drill, a renter can now do with adhesion, tension and gravity, and undo in one afternoon, deposit fully intact.
 
-These are the ten no-drill moves we trust most, in the order we would do them in a new rental. Each one is reversible, most cost less than a takeaway dinner, and together they take a rental from "temporary" to "mine" faster than any furniture delivery.
+These are the ten no-drill moves we trust most from our [renter-friendly decor guides](/category/renter-friendly), in the order we would do them in a new rental. Each one is reversible, most cost less than a takeaway dinner, and together they take a rental from "temporary" to "mine" faster than any furniture delivery.
 
 ## 1. The adhesive gallery wall
 
@@ -65,7 +65,7 @@ The cheapest decor in this entire article: replace cold 5000K bulbs with warm 27
 
 ## 5. A rug big enough to be a room
 
-In an open rental, a large rug is not an accessory; it is architecture. It defines the living room inside the room, warms the landlord's flooring choice, absorbs the echo that makes rentals feel empty, and hides a multitude of floor sins. Go bigger than feels safe, front legs of all furniture on the rug, and choose a warm neutral that could anchor any of the paint palettes in our paint-color guides.
+In an open rental, a large rug is not an accessory; it is architecture. It defines the living room inside the room, warms the landlord's flooring choice, absorbs the echo that makes rentals feel empty, and hides a multitude of floor sins. Go bigger than feels safe, front legs of all furniture on the rug, and choose a warm neutral that could anchor any room painted in [the paint colors that make small living rooms look bigger](/blog/paint-colors-that-make-a-small-living-room-look-bigger).
 
 ## 6. Lean, don't hang: the big art trick
 
@@ -83,7 +83,7 @@ Modern peel-and-stick wallpaper is the rental upgrade with the highest drama-to-
 
 ## 9. Over-door and under-shelf storage
 
-Decor is also what you no longer see. An over-door organizer turns the back of the bathroom or bedroom door into a linen closet. Under-shelf baskets clip onto kitchen cabinet shelves and double them without a single screw. When the visual noise drops, the decor you chose finally gets to be the loudest thing in the room, which was the point.
+Decor is also what you no longer see. An over-door organizer turns the back of the bathroom or bedroom door into a linen closet. Under-shelf baskets clip onto kitchen cabinet shelves and double them without a single screw. When the visual noise drops, the decor you chose finally gets to be the loudest thing in the room, which was the point. To keep it from creeping back, pair these moves with [small living room organization systems built on zones and lidded baskets](/blog/small-living-room-organization-ideas).
 
 ## 10. Plants on stands, height without hooks
 

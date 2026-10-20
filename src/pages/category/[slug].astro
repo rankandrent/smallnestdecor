@@ -12,6 +12,18 @@ export async function getStaticPaths() {
 interface Props { category: Category }
 const { category } = Astro.props;
 
+const escapeHtml = (s: string): string =>
+  s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+
+let introHtml = escapeHtml(category.intro);
+if (category.introLink) {
+  const anchor = escapeHtml(category.introLink.text);
+  introHtml = introHtml.replace(
+    anchor,
+    `<a href="${category.introLink.href}" class="font-semibold text-terracotta-dark underline underline-offset-4">${anchor}</a>`
+  );
+}
+
 const articles = (await getCollection('articles', ({ data }) => !data.draft && data.category === category.slug))
   .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
 
@@ -45,7 +57,7 @@ const collectionJsonLd = {
       <div class="lg:col-span-3">
         <p class="text-xs font-semibold uppercase tracking-[0.2em] text-terracotta-dark">{category.tagline}</p>
         <h1 class="mt-3 font-display text-4xl font-semibold sm:text-5xl">{category.name}</h1>
-        <p class="mt-5 leading-[1.85] text-cocoa">{category.intro}</p>
+        <p class="mt-5 leading-[1.85] text-cocoa" set:html={introHtml} />
       </div>
       <div class="overflow-hidden rounded-[2rem] shadow-lg lg:col-span-2">
         <img src={category.image} alt={category.name} width="900" height="675" class="aspect-[4/3] w-full object-cover" />
