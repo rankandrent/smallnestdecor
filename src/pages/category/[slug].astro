@@ -3,6 +3,7 @@ import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import ArticleCard from '../../components/ArticleCard.astro';
 import { categories, type Category } from '../../data/categories';
+import { siteConfig } from '../../site.config';
 
 export async function getStaticPaths() {
   return categories.map((c) => ({ params: { slug: c.slug }, props: { category: c } }));
@@ -13,9 +14,32 @@ const { category } = Astro.props;
 
 const articles = (await getCollection('articles', ({ data }) => !data.draft && data.category === category.slug))
   .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+
+const collectionJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  name: category.name,
+  description: category.intro,
+  url: `${siteConfig.url}/category/${category.slug}`,
+  isPartOf: { '@type': 'WebSite', name: siteConfig.name, url: siteConfig.url },
+  mainEntity: {
+    '@type': 'ItemList',
+    numberOfItems: articles.length,
+    itemListElement: articles.map((a, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      name: a.data.title,
+      url: `${siteConfig.url}/blog/${a.data.slug}`,
+    })),
+  },
+};
 ---
 
 <BaseLayout title={category.name} description={category.intro.slice(0, 155) + '…'} ogImage={category.image}>
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(collectionJsonLd)} />
+  </Fragment>
+
   <section class="mx-auto max-w-6xl px-4 pt-12 sm:px-6">
     <div class="grid items-center gap-8 lg:grid-cols-5">
       <div class="lg:col-span-3">
@@ -39,7 +63,7 @@ const articles = (await getCollection('articles', ({ data }) => !data.draft && d
         <p class="font-display text-2xl font-semibold">Guides for this corner are on the way</p>
         <p class="mx-auto mt-2 max-w-md text-cocoa">
           We publish new {category.name.toLowerCase()} ideas every week. Meanwhile, wander the
-          <a href="/blog" class="font-semibold text-terracotta-dark underline underline-offset-4"> full collection</a> —
+          <a href="/blog" class="font-semibold text-terracotta-dark underline underline-offset-4"> full collection</a>,
           small homes reward wandering.
         </p>
       </div>

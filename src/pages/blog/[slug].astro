@@ -101,24 +101,29 @@ const faqJsonLd = d.faq.length
     {hasProducts && (
       <p class="mt-5 rounded-2xl border border-sand bg-beige/70 px-5 py-3.5 text-sm leading-relaxed text-cocoa">
         This post may contain affiliate links. If you buy through them, we may earn a small
-        commission at no extra cost to you — it helps keep SmallNestDecor free. Thank you!
+        commission at no extra cost to you, it helps keep SmallNestDecor free. Thank you!
       </p>
     )}
 
-    <img
-      src={d.heroImage}
-      alt={d.title}
-      width="1200"
-      height="800"
-      class="mt-7 aspect-[3/2] w-full rounded-[1.75rem] object-cover shadow-md"
-      fetchpriority="high"
-    />
+    <figure class="mt-7">
+      <img
+        src={d.heroImage}
+        alt={d.title}
+        width="1200"
+        height="800"
+        class="aspect-[3/2] w-full rounded-[1.75rem] object-cover shadow-md"
+        fetchpriority="high"
+      />
+      {d.heroCaption && (
+        <figcaption class="mt-3 text-center text-sm leading-relaxed text-cocoa">{d.heroCaption}</figcaption>
+      )}
+    </figure>
 
     <PinItBlock slug={d.slug} title={d.title} pinImage={d.pinImage} pinTitle={d.pinTitle} pinDescription={d.pinDescription} />
 
-    <div class="prose-nest">
+    <section class="prose-nest">
       <Content />
-    </div>
+    </section>
 
     <AdSlot format="in-article" />
 

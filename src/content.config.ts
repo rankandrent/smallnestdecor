@@ -25,6 +25,7 @@ const articles = defineCollection({
     date: z.coerce.date(),
     updated: z.coerce.date().optional(),
     heroImage: z.string(),
+    heroCaption: z.string().optional(),
     pinImage: z.string(),
     pinTitle: z.string(),
     pinDescription: z.string(),

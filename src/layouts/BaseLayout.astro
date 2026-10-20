@@ -16,7 +16,7 @@ interface Props {
 const {
   title,
   description = siteConfig.description,
-  ogImage = '/images/hero-home.svg',
+  ogImage = '/images/hero-home.webp',
   ogType = 'website',
   canonical,
 } = Astro.props;
@@ -24,7 +24,7 @@ const {
 const canonicalUrl = canonical ?? new URL(Astro.url.pathname, siteConfig.url).toString();
 const ogImageUrl = ogImage.startsWith('http') ? ogImage : siteConfig.url + ogImage;
 const { gaId, gscVerification, pinterestVerification } = siteConfig.analytics;
-const fullTitle = title === siteConfig.name ? `${siteConfig.name} — ${siteConfig.tagline}` : `${title} | ${siteConfig.name}`;
+const fullTitle = title === siteConfig.name ? `${siteConfig.name}: ${siteConfig.tagline}` : `${title} | ${siteConfig.name}`;
 ---
 
 <!doctype html>
@@ -60,7 +60,7 @@ const fullTitle = title === siteConfig.name ? `${siteConfig.name} — ${siteConf
       </>
     )}
 
-    {/* Ad network loader injection point — renders only when ads are enabled in site.config.ts */}
+    {/* Ad network loader injection point, renders only when ads are enabled in site.config.ts */}
     {siteConfig.ads.enabled && siteConfig.ads.headScript && (
       <Fragment set:html={siteConfig.ads.headScript} />
     )}

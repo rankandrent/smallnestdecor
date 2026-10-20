@@ -12,6 +12,26 @@ const articles = (await getCollection('articles', ({ data }) => !data.draft))
 const tiles = categories.slice(0, 6);
 const latest = articles.slice(0, 9);
 
+const organizationJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: siteConfig.name,
+  url: siteConfig.url,
+  logo: siteConfig.url + siteConfig.logo,
+  description: siteConfig.description,
+  email: siteConfig.email,
+  sameAs: ['https://www.pinterest.com/VigoCart/'],
+};
+
+const websiteJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: siteConfig.name,
+  url: siteConfig.url,
+  description: siteConfig.description,
+  publisher: { '@type': 'Organization', name: siteConfig.name, url: siteConfig.url },
+};
+
 const popularColors = [
   { name: 'Agreeable Gray', brand: 'Sherwin-Williams', hex: '#D1C7B7' },
   { name: 'Alabaster', brand: 'Sherwin-Williams', hex: '#EDEAE0' },
@@ -22,12 +42,17 @@ const popularColors = [
 ];
 ---
 
-<BaseLayout title={siteConfig.name} description={siteConfig.description} ogImage="/images/hero-home.svg">
+<BaseLayout title={siteConfig.name} description={siteConfig.description} ogImage="/images/hero-home.webp">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(organizationJsonLd)} />
+    <script type="application/ld+json" set:html={JSON.stringify(websiteJsonLd)} />
+  </Fragment>
+
   <!-- Hero -->
   <section class="mx-auto max-w-6xl px-4 pt-10 sm:px-6 sm:pt-14">
     <div class="grid items-center gap-10 lg:grid-cols-2">
       <div>
-        <p class="text-xs font-semibold uppercase tracking-[0.2em] text-terracotta-dark">Decor · Paint · Storage — for small homes</p>
+        <p class="text-xs font-semibold uppercase tracking-[0.2em] text-terracotta-dark">Decor · Paint · Storage, for small homes</p>
         <h1 class="mt-4 font-display text-4xl font-semibold leading-[1.08] sm:text-5xl lg:text-[3.4rem]">
           Small spaces,<br />beautifully lived in.
         </h1>
@@ -46,7 +71,7 @@ const popularColors = [
         </div>
       </div>
       <div class="overflow-hidden rounded-[2rem] shadow-xl">
-        <img src="/images/hero-home.svg" alt="A warm, light-filled small living room" width="1400" height="1000" class="aspect-[7/5] w-full object-cover" fetchpriority="high" />
+        <img src="/images/hero-home.webp" alt="A warm, light-filled small living room" width="1400" height="1000" class="aspect-[7/5] w-full object-cover" fetchpriority="high" />
       </div>
     </div>
   </section>
@@ -54,7 +79,7 @@ const popularColors = [
   <!-- Category tiles -->
   <section class="mx-auto max-w-6xl px-4 pt-16 sm:px-6">
     <div class="flex items-end justify-between gap-4">
-      <h2 class="font-display text-3xl font-semibold">Start with a room — or a problem</h2>
+      <h2 class="font-display text-3xl font-semibold">Start with a room, or a problem</h2>
       <a href="/blog" class="hidden shrink-0 text-sm font-semibold text-terracotta-dark sm:block">All ideas →</a>
     </div>
     <div class="mt-7 grid grid-cols-2 gap-4 lg:grid-cols-3">
@@ -111,7 +136,7 @@ const popularColors = [
     <div class="rounded-[2rem] border border-sand bg-white p-8 text-center sm:p-12">
       <p class="font-display text-2xl font-semibold sm:text-3xl">Made for the way small homes actually live.</p>
       <p class="mx-auto mt-3 max-w-2xl leading-relaxed text-cocoa">
-        SmallNestDecor is written for renters and small-space lovers — no
+        SmallNestDecor is written for renters and small-space lovers, no
         renovations, no forty-step projects, no pretending the closet is a
         walk-in. Just warm, workable ideas, one room at a time.
       </p>

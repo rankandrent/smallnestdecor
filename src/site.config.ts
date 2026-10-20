@@ -34,7 +34,7 @@ export const siteConfig = {
   },
   /**
    * Ad-network readiness. When `enabled` is false (default) nothing ad
-   * related renders anywhere — no scripts, no placeholder boxes.
+   * related renders anywhere, no scripts, no placeholder boxes.
    * When a network is onboarded: set `enabled: true` and paste the
    * network loader into `headScript`; AdSlot components will reserve
    * fixed-height space in their positions.

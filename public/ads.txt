@@ -1,3 +1,3 @@
-# ads.txt for smallnestdecor.com — placeholder.
+# ads.txt for smallnestdecor.com: placeholder.
 # Ad networks (AdSense / Mediavine / Raptive) will provide the lines to
 # place here when the site is onboarded. No sellers are authorised yet.

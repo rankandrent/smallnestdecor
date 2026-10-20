@@ -14,14 +14,17 @@ const pinUrl = `https://www.pinterest.com/pin/create/button/?url=${encodeURIComp
 ---
 
 <aside class="my-10 flex flex-col items-center gap-5 rounded-3xl border border-sand bg-beige/70 p-6 sm:flex-row sm:p-8">
-  <img
-    src={pinImage}
-    alt={pinTitle}
-    loading="lazy"
-    width="200"
-    height="300"
-    class="aspect-[2/3] w-40 shrink-0 rounded-2xl object-cover shadow-md sm:w-44"
-  />
+  <figure class="shrink-0">
+    <img
+      src={pinImage}
+      alt={pinTitle}
+      loading="lazy"
+      width="200"
+      height="300"
+      class="aspect-[2/3] w-40 rounded-2xl object-cover shadow-md sm:w-44"
+    />
+    <figcaption class="mt-2 w-40 text-center text-xs leading-snug text-cocoa sm:w-44">The 2:3 Pin image for this guide.</figcaption>
+  </figure>
   <div class="text-center sm:text-left">
     <p class="text-xs font-semibold uppercase tracking-widest text-terracotta-dark">Save it for later</p>
     <p class="mt-2 font-display text-2xl font-semibold leading-snug">{pinTitle}</p>
