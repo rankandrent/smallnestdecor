@@ -4,8 +4,8 @@ slug: "small-living-room-organization-ideas"
 category: "organization-storage"
 description: "Ten honest organization systems for a small living room — zones, hidden storage and vertical tricks that give real space back without buying a bigger sofa."
 date: 2026-10-18
-heroImage: "/images/articles/organization-hero.svg"
-pinImage: "/images/articles/organization-pin.svg"
+heroImage: "/images/articles/organization-hero.webp"
+pinImage: "/images/articles/organization-pin.webp"
 pinTitle: "10 Small Living Room Organization Systems That Actually Work"
 pinDescription: "Zones, hidden storage and one-rail tricks that make a tiny living room feel twice as organized — no renovation, no matching baskets required."
 faq:
@@ -29,7 +29,7 @@ Organization starts with deciding what happens where. A rug under the sofa area 
 
 In a small room, a tray is not decoration — it is a boundary. Put a tray on the coffee table, the sideboard, the top of the bookshelf: anything inside the tray is allowed, anything outside it is not. The human eye reads a tray of six objects as one tidy object, and reads the same six objects loose as a mess. This is the cheapest system on this list and the one guests notice most.
 
-![A small living room divided into calm, clear zones](/images/articles/organization-room-1.svg)
+![Open shelving with woven baskets, books and a trailing plant in a small room](/images/articles/organization-room-1.webp)
 
 ## 3. One lidded basket per problem
 
@@ -47,7 +47,7 @@ Floor space is spent; wall space in most small living rooms is nearly untouched.
 
 There is a forgotten storage floor in every small living room: the ten centimeters under the sofa, the bed-frame gap, the space beneath the media unit. Flat, low boxes turn that shadow into a home for the things you need monthly, not daily — the gift wrap, the spare cables, the board games, the seasonal cushion covers. Measure the clearance before buying boxes; sofa legs lie about their height.
 
-![A living room wall used for shelves and hidden storage](/images/articles/organization-room-2.svg)
+![An entryway landing strip with wall hooks, a slim console and shoe storage](/images/articles/organization-room-2.webp)
 
 ## 7. Cables: the invisible clutter
 

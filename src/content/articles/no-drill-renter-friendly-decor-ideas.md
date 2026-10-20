@@ -4,8 +4,8 @@ slug: "no-drill-renter-friendly-decor-ideas"
 category: "renter-friendly"
 description: "Ten no-drill decor ideas that transform a rental without risking your deposit — gallery walls, peel-and-stick, tension tricks and lighting swaps that undo in minutes."
 date: 2026-10-15
-heroImage: "/images/articles/no-drill-hero.svg"
-pinImage: "/images/articles/no-drill-pin.svg"
+heroImage: "/images/articles/no-drill-hero.webp"
+pinImage: "/images/articles/no-drill-pin.webp"
 pinTitle: "10 No-Drill Decor Ideas Your Landlord Will Never Know About"
 pinDescription: "Gallery walls with zero holes, peel-and-stick everything, and tension-rod magic — the renter decor playbook that gets your full deposit back."
 faq:
@@ -50,7 +50,7 @@ A gallery wall is the single fastest way to make a rental feel inhabited, and ad
 
 Rental kitchens are where hope goes to be beige. Peel-and-stick tiles — real stone-look, subway, or soft zellige styles — cover the saddest square meter of the apartment in about an hour, and they transform how every photo of your cooking looks for the rest of the lease. Measure twice, start from the most visible corner, and keep a hairdryer nearby for removal day. Avoid the area directly behind a gas flame, and skip freshly painted walls.
 
-![An entryway refreshed with peel-and-stick and adhesive hooks](/images/articles/no-drill-room-1.svg)
+![A rental kitchen counter with a peel-and-stick backsplash and removable organizers](/images/articles/no-drill-room-1.webp)
 
 ## 3. Curtains on tension rods, hung high
 
@@ -72,7 +72,7 @@ Oversized art does not need to hang at all. A large framed print leaning on a si
 
 If one room's floor truly cannot be lived with — the bathroom, usually — peel-and-stick floor tiles or a cut-to-fit vinyl sheet can cover it completely and come up again at the end of the lease. It is the biggest project on this list (a focused half-day), so save it for leases of a year or more, photograph the original floor first, and keep the removed box in storage as your receipt of good intentions.
 
-![Curtains hung on a tension rod, high and wide](/images/articles/no-drill-room-2.svg)
+![A small rental bathroom with over-toilet shelving and adhesive wall organizers](/images/articles/no-drill-room-2.webp)
 
 ## 8. Removable wallpaper on one small wall
 
