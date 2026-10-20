@@ -12,6 +12,8 @@ pinDescription: "The exact shades decorators reach for when a living room is tin
 faq:
   - q: "What is the single best paint color for a small living room?"
     a: "For most small living rooms, a warm white or soft greige with an LRV between 60 and 75 is the safest win, Benjamin Moore White Dove and Sherwin-Williams Agreeable Gray are the two we recommend most. They reflect enough light to open the room up without the cold, blue cast that makes north-facing rooms feel smaller."
+  - q: "What does LRV mean, and what range works in a small room?"
+    a: "LRV is Light Reflectance Value, a 0 to 100 scale printed on most paint swatches that shows how much light a color reflects. For a small living room that needs to feel bigger, aim for 60 to 75: bright enough to bounce light around the room, with enough body to avoid the stark, clinical feel of the very highest values."
   - q: "Do dark colors really make a small living room look bigger?"
     a: "Counterintuitively, yes, sometimes. A deep, saturated color on all four walls blurs the corners, so the eye stops reading exactly where the room ends. It works best in rooms with one good window and lighter furniture to contrast against. It fails in dark, windowless rooms, where it just feels like a cave."
   - q: "Should the ceiling be painted the same color as the walls?"
@@ -19,7 +21,7 @@ faq:
   - q: "What finish should I use in a small living room?"
     a: "Eggshell or satin. They reflect a little light, which helps the room feel larger, and they wipe clean, important when furniture sits close to walls. Flat paint hides flaws but absorbs light and marks easily in tight spaces."
   - q: "How do I test a paint color properly in a small room?"
-    a: "Paint two large swatches (at least 30 x 30 cm) on two different walls, and live with them for a full day. Check them in morning light, afternoon light and lamplight. In small rooms the same color can read warm at noon and gray at night, and the swatch is the only honest preview you get."
+    a: "Paint two large swatches (at least 30 × 30 cm) on two different walls, and live with them for a full day. Check them in morning light, afternoon light and lamplight. In small rooms the same color can read warm at noon and gray at night, and the swatch is the only honest preview you get."
 ---
 
 A small living room has one unfair advantage: it takes about two gallons of paint to completely change how it feels. No new sofa, no renovation, no landlord drama, just a color that makes the walls step back and the light stay a little longer. The trick is choosing a shade that works *with* a small footprint instead of apologizing for it.
@@ -46,7 +48,7 @@ Swiss Coffee is the coziest of the three, a warm, slightly deep white that makes
 
 ### 4. Sherwin-Williams Agreeable Gray (SW 7029)
 
-The best-selling paint color in America, and in small living rooms it earns the title. Agreeable Gray is a true greige, warm enough for north light, balanced enough for south, and it makes a small room feel finished rather than decorated. It is also the friendliest backdrop if your sofa, rug and art are all slightly different neutrals. **Watch out:** it can flash a faint violet in rooms with lots of cool LED light. The swatch test will tell you in one evening.
+One of the best-selling paint colors in America, and in small living rooms it earns the title. Agreeable Gray is a true greige, warm enough for north light, balanced enough for south, and it makes a small room feel finished rather than decorated. It is also the friendliest backdrop if your sofa, rug and art are all slightly different neutrals. **Watch out:** it can flash a faint violet in rooms with lots of cool LED light. The swatch test will tell you in one evening.
 
 ### 5. Sherwin-Williams Accessible Beige (SW 7036)
 
@@ -90,7 +92,7 @@ If painting is not allowed, you can still steal most of the effect: choose one o
 
 > The rule underneath all twelve: in a small room, light is square footage. Pick the color that keeps the most light in the room, and test it on two walls, for one full day, before you commit.
 
-## How to choose your final shade in one weekend
+## How do you choose your final shade in one weekend?
 
 1. **Shortlist three** from the family that matches your light: warm whites for north-facing, greiges for mixed light, a deep color if you have one good window and a brave heart.
 2. **Paint big swatches**, at least 30 × 30 cm, on two different walls.

@@ -7,8 +7,8 @@ date: 2026-10-15
 heroImage: "/images/articles/no-drill-hero.webp"
 heroCaption: "A gallery wall hung entirely on adhesive strips above the sofa: the full effect, zero holes, deposit intact."
 pinImage: "/images/articles/no-drill-pin.webp"
-pinTitle: "10 No-Drill Decor Ideas Your Landlord Will Never Know About"
-pinDescription: "Gallery walls with zero holes, peel-and-stick everything, and tension-rod magic, the renter decor playbook that gets your full deposit back."
+pinTitle: "10 No-Drill Decor Ideas That Leave No Trace Behind"
+pinDescription: "Gallery walls with zero holes, peel-and-stick everything, and tension-rod magic, the renter decor playbook built to keep your deposit intact."
 faq:
   - q: "Will adhesive hooks really hold a gallery wall without damaging paint?"
     a: "Yes, if you respect the weight rating and remove them correctly, pull the tab straight down, slowly, parallel to the wall. Most damage stories come from yanking the strip outward. Buy one weight class above what your frame needs, clean the spot with rubbing alcohol first, and wait a full hour before hanging."
@@ -17,16 +17,18 @@ faq:
   - q: "What decor changes do most leases actually allow?"
     a: "Most standard leases prohibit holes and permanent changes but are silent on adhesive products, tension rods, freestanding furniture and plug-in lighting. When in doubt, send your landlord one short, friendly message with a photo of the product, written permission for a maybe beats an argument at move-out."
   - q: "How do I document my walls so I get my deposit back?"
-    a: "On move-in day, photograph every wall in daylight, close up, including existing marks, and email the photos to yourself (the timestamp is the proof). Repeat at move-out after your decor comes down. This five-minute habit has saved more deposits than any product on this page."
+    a: "On move-in day, photograph every wall in daylight, close up, including existing marks, and email the photos to yourself (the timestamp is the proof). Repeat at move-out after your decor comes down. Five minutes of photos is the cheapest deposit protection a renter can get."
   - q: "Can I hang curtains without drilling in a rental?"
     a: "Absolutely, tension rods inside the window frame are the classic answer, and adhesive or clamp brackets that grip the frame work for outside mounts. Hang curtains as high and wide as the method allows; the taller the curtain, the taller the room feels."
+  - q: "What if an adhesive strip pulls off a bit of paint anyway?"
+    a: "It happens occasionally, usually on old or matte paint. Stop, and remove any remaining strips the slow way, pulling straight down. For a small flake, press a dab of filler into the spot, let it dry, sand lightly and touch up with matching paint; most rentals use a standard white, and a small sample pot costs very little. Photograph the repair alongside your move-in photos."
 products:
   - name: "Large Adhesive Picture-Hanging Strips (12 pairs)"
     note: "The gallery-wall workhorse. Holds up to 7kg per set of four pairs; removes with one straight-down pull."
     url: "https://www.amazon.com/s?k=large+adhesive+picture+hanging+strips"
     image: "/images/products/command-hooks.svg"
   - name: "Peel-and-Stick Subway Tiles (10 sheets)"
-    note: "Kitchen backsplash in an afternoon. Heat-resistant, wipeable, and they peel off clean with a hairdryer's help."
+    note: "Kitchen backsplash in an afternoon. Heat-resistant, wipeable, and they peel off cleanly with help from a hairdryer."
     url: "https://www.amazon.com/s?k=peel+and+stick+subway+tile+backsplash"
     image: "/images/products/peel-stick-tiles.svg"
   - name: "No-Drill Tension Curtain Rod (adjustable)"
@@ -71,7 +73,7 @@ Oversized art does not need to hang at all. A large framed print leaning on a si
 
 ## 7. Peel-and-stick flooring for the worst room
 
-If one room's floor truly cannot be lived with, the bathroom, usually, peel-and-stick floor tiles or a cut-to-fit vinyl sheet can cover it completely and come up again at the end of the lease. It is the biggest project on this list (a focused half-day), so save it for leases of a year or more, photograph the original floor first, and keep the removed box in storage as your receipt of good intentions.
+If one room's floor truly cannot be lived with, the bathroom, usually, peel-and-stick floor tiles or a cut-to-fit vinyl sheet can cover it completely and come up again at the end of the lease. It is the biggest project on this list (a focused half-day), so save it for leases of a year or more, photograph the original floor first, and keep the offcuts and packaging in storage in case a tile ever needs swapping.
 
 ![A small rental bathroom with over-toilet shelving and adhesive wall organizers](/images/articles/no-drill-room-2.webp)
 
@@ -89,6 +91,6 @@ Finally, the renter's oldest trick: green, at height, without touching the ceili
 
 > The landlord owns the walls. You own everything that happens six inches in front of them.
 
-## Before you start: the five-minute deposit ritual
+## How do you protect your deposit before you start?
 
-Photograph every wall in daylight, close up, and email the photos to yourself today. That timestamped album is your move-out insurance. Then work the list top to bottom, keep every original fixture you remove in one labeled box, and save the landlord one friendly message for anything in the gray zone. A rental decorated this way does not just look like yours, at the end of the lease, it hands you your deposit back and asks where you are nesting next.
+Start with the five-minute ritual from the FAQ above: photograph every wall in daylight and email the photos to yourself today, so the timestamp proves the walls' condition before you touched them. Then work the list top to bottom, keep every original fixture you remove in one labeled box, and save the landlord one friendly message for anything in the gray zone. A rental decorated this way does not just look like yours. At the end of the lease, it gives you the strongest possible case for getting your deposit back, and asks where you are nesting next.

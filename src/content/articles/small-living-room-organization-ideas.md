@@ -18,6 +18,8 @@ faq:
     a: "Usually three: one for blankets and soft things, one for the daily drop (remotes, chargers, mail), and one that stays empty as a five-minute-tidy basket. More baskets than that and the baskets themselves become the clutter."
   - q: "What is the biggest organization mistake in small living rooms?"
     a: "Buying organizers before removing anything. In a small room, every storage product takes up the space it is meant to save. Declutter first, measure second, buy last, and only for the categories that survived the declutter."
+  - q: "How much does it cost to organize a small living room?"
+    a: "Less than most people expect. The first systems, trays and three lidded baskets, cost almost nothing if you start with trays and baskets you already own; bought new, a few decent baskets are usually the only spend of the first weekend. The real money sits in storage furniture (system 4), and that should only be bought when a piece genuinely needs replacing anyway."
 ---
 
 A small living room does not have a space problem. It has a *systems* problem. The room is asked to be a lounge, an office, a dining room and a guest room, and without systems, all four jobs dump their belongings on the same three flat surfaces. The good news: organization scales down beautifully. These ten systems are the ones we see work again and again in real small living rooms, ordered from the Saturday-morning easy to the weekend project.
@@ -60,7 +62,7 @@ Most small living rooms are also the entryway, which means the room absorbs keys
 
 ## 9. One in, one out, the rule that keeps the systems alive
 
-Every system above will slowly fail without one agreement with yourself: when something new enters the living room, something of similar size leaves it. A new throw means an old throw is donated. A new book joins the shelf only when one departs to a friend. This sounds strict, and in a big house it would be. In a small living room it is simply physics, the room holds a fixed volume of things while feeling calm, and every object past that volume is paid for in daily friction. The rule is not about minimalism or owning little. The three baskets stay full and loved. It is about keeping the *total* constant, so the zones keep working, the trays stay trays instead of archaeology, and the room you organized in October is still the room you live in next June. If letting go is hard, keep a "maybe" box in the under-sofa space for thirty days; almost everything in it will leave quietly at the end of the month, and the few things you rescue will have earned their way back.
+Every system above will slowly fail without one agreement with yourself: when something new enters the living room, something of similar size leaves it. A new throw means an old throw is donated. A new book joins the shelf only when one departs to a friend. In a small living room this is simply physics: the room holds a fixed volume of things while feeling calm, and every object past that volume is paid for in daily friction. The rule is not about minimalism or owning little. It is about keeping the *total* constant, so the zones keep working and the room you organized in October is still the room you live in next June. If letting go is hard, keep a "maybe" box in the under-sofa space for thirty days; almost everything in it will leave quietly, and the few things you rescue will have earned their way back.
 
 ## 10. The ten-minute reset ritual
 
@@ -68,6 +70,6 @@ Systems hold the room together; rituals keep the systems alive. The small-living
 
 > Organize for the life the room actually lives. A small living room does not need to hold everything, it needs to hold *its* things, in *its* zones, with lids on.
 
-## Where to start this weekend
+## Where should you start this weekend?
 
 Start with system 2 (trays) and system 3 (three baskets), together they cost almost nothing and change the room by Sunday lunch. Next weekend, audit the under-furniture space (system 6) and the door (system 8). Save the storage furniture (system 4) for when something genuinely needs replacing. Small rooms reward sequence, not shopping sprees.
