@@ -1,0 +1,48 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ArticleCard from '../../components/ArticleCard.astro';
+import { categories, type Category } from '../../data/categories';
+
+export async function getStaticPaths() {
+  return categories.map((c) => ({ params: { slug: c.slug }, props: { category: c } }));
+}
+
+interface Props { category: Category }
+const { category } = Astro.props;
+
+const articles = (await getCollection('articles', ({ data }) => !data.draft && data.category === category.slug))
+  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+---
+
+<BaseLayout title={category.name} description={category.intro.slice(0, 155) + '…'} ogImage={category.image}>
+  <section class="mx-auto max-w-6xl px-4 pt-12 sm:px-6">
+    <div class="grid items-center gap-8 lg:grid-cols-5">
+      <div class="lg:col-span-3">
+        <p class="text-xs font-semibold uppercase tracking-[0.2em] text-terracotta-dark">{category.tagline}</p>
+        <h1 class="mt-3 font-display text-4xl font-semibold sm:text-5xl">{category.name}</h1>
+        <p class="mt-5 leading-[1.85] text-cocoa">{category.intro}</p>
+      </div>
+      <div class="overflow-hidden rounded-[2rem] shadow-lg lg:col-span-2">
+        <img src={category.image} alt={category.name} width="900" height="675" class="aspect-[4/3] w-full object-cover" />
+      </div>
+    </div>
+
+    {articles.length > 0 ? (
+      <div class="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        {articles.map((a) => (
+          <ArticleCard slug={a.data.slug} title={a.data.title} description={a.data.description} category={a.data.category} heroImage={a.data.heroImage} date={a.data.date} />
+        ))}
+      </div>
+    ) : (
+      <div class="mt-12 rounded-3xl border border-dashed border-sand bg-white/60 p-10 text-center">
+        <p class="font-display text-2xl font-semibold">Guides for this corner are on the way</p>
+        <p class="mx-auto mt-2 max-w-md text-cocoa">
+          We publish new {category.name.toLowerCase()} ideas every week. Meanwhile, wander the
+          <a href="/blog" class="font-semibold text-terracotta-dark underline underline-offset-4"> full collection</a> —
+          small homes reward wandering.
+        </p>
+      </div>
+    )}
+  </section>
+</BaseLayout>

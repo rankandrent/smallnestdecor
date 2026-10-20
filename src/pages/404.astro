@@ -1,0 +1,25 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { categories } from '../data/categories';
+---
+
+<BaseLayout title="Page not found" description="That corner of the nest does not exist — but plenty of good ideas do.">
+  <section class="mx-auto max-w-3xl px-4 pt-16 text-center sm:px-6">
+    <p class="font-display text-7xl font-semibold text-terracotta">404</p>
+    <h1 class="mt-4 font-display text-4xl font-semibold">This corner of the nest is empty</h1>
+    <p class="mx-auto mt-4 max-w-md leading-relaxed text-cocoa">
+      The page you are looking for has moved, or never existed — small homes
+      are tidy like that. Try one of these instead:
+    </p>
+    <div class="mt-9 flex flex-wrap justify-center gap-2.5">
+      {categories.map((c) => (
+        <a href={`/category/${c.slug}`} class="inline-flex min-h-11 items-center rounded-full border border-sand bg-white px-5 text-sm font-semibold transition-colors hover:border-terracotta hover:text-terracotta-dark">
+          {c.name}
+        </a>
+      ))}
+    </div>
+    <a href="/" class="mt-10 inline-flex min-h-12 items-center rounded-full bg-terracotta px-7 font-semibold text-white transition-colors hover:bg-terracotta-dark">
+      Back to the homepage
+    </a>
+  </section>
+</BaseLayout>

@@ -1,0 +1,183 @@
+---
+import { getCollection, render } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ArticleCard from '../../components/ArticleCard.astro';
+import PinItBlock from '../../components/PinItBlock.astro';
+import AdSlot from '../../components/AdSlot.astro';
+import { categoryBySlug } from '../../data/categories';
+import { siteConfig } from '../../site.config';
+
+export async function getStaticPaths() {
+  const articles = await getCollection('articles', ({ data }) => !data.draft);
+  return articles.map((entry) => ({
+    params: { slug: entry.data.slug },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const d = entry.data;
+const { Content } = await render(entry);
+const cat = categoryBySlug(d.category);
+const articleUrl = `${siteConfig.url}/blog/${d.slug}`;
+const updated = d.updated ?? d.date;
+const dateStr = d.date.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
+const hasProducts = Array.isArray(d.products) && d.products.length > 0;
+
+const all = await getCollection('articles', ({ data }) => !data.draft);
+const related = all
+  .filter((a) => a.data.slug !== d.slug)
+  .sort((a, b) => {
+    const am = a.data.category === d.category ? 0 : 1;
+    const bm = b.data.category === d.category ? 0 : 1;
+    return am - bm || b.data.date.valueOf() - a.data.date.valueOf();
+  })
+  .slice(0, 3);
+
+const articleJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: d.title,
+  description: d.description,
+  image: [siteConfig.url + d.heroImage, siteConfig.url + d.pinImage],
+  datePublished: d.date.toISOString(),
+  dateModified: updated.toISOString(),
+  author: { '@type': 'Organization', name: siteConfig.publisher.authorName, url: siteConfig.url },
+  publisher: {
+    '@type': 'Organization',
+    name: siteConfig.publisher.name,
+    logo: { '@type': 'ImageObject', url: siteConfig.url + siteConfig.logo },
+  },
+  mainEntityOfPage: articleUrl,
+};
+
+const breadcrumbJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: siteConfig.url + '/' },
+    { '@type': 'ListItem', position: 2, name: cat.name, item: `${siteConfig.url}/category/${cat.slug}` },
+    { '@type': 'ListItem', position: 3, name: d.title, item: articleUrl },
+  ],
+};
+
+const faqJsonLd = d.faq.length
+  ? {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: d.faq.map((f) => ({
+        '@type': 'Question',
+        name: f.q,
+        acceptedAnswer: { '@type': 'Answer', text: f.a },
+      })),
+    }
+  : null;
+---
+
+<BaseLayout title={d.title} description={d.description} ogImage={d.pinImage} ogType="article">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(articleJsonLd)} />
+    <script type="application/ld+json" set:html={JSON.stringify(breadcrumbJsonLd)} />
+    {faqJsonLd && <script type="application/ld+json" set:html={JSON.stringify(faqJsonLd)} />}
+  </Fragment>
+
+  <article class="mx-auto max-w-3xl px-4 pt-10 sm:px-6">
+    <!-- Breadcrumb -->
+    <nav aria-label="Breadcrumb" class="text-sm text-cocoa">
+      <a href="/" class="hover:text-terracotta-dark">Home</a>
+      <span class="mx-1.5">/</span>
+      <a href={`/category/${cat.slug}`} class="hover:text-terracotta-dark">{cat.name}</a>
+      <span class="mx-1.5">/</span>
+      <span class="text-charcoal/70">{d.title}</span>
+    </nav>
+
+    <h1 class="mt-5 font-display text-4xl font-semibold leading-[1.12] sm:text-[2.75rem]">{d.title}</h1>
+    <p class="mt-4 text-lg leading-relaxed text-cocoa">{d.description}</p>
+    <p class="mt-4 text-sm text-cocoa">
+      By {siteConfig.publisher.authorName} · {dateStr}
+      {d.updated && <> · Updated {d.updated.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}</>}
+    </p>
+
+    {hasProducts && (
+      <p class="mt-5 rounded-2xl border border-sand bg-beige/70 px-5 py-3.5 text-sm leading-relaxed text-cocoa">
+        This post may contain affiliate links. If you buy through them, we may earn a small
+        commission at no extra cost to you — it helps keep SmallNestDecor free. Thank you!
+      </p>
+    )}
+
+    <img
+      src={d.heroImage}
+      alt={d.title}
+      width="1200"
+      height="800"
+      class="mt-7 aspect-[3/2] w-full rounded-[1.75rem] object-cover shadow-md"
+      fetchpriority="high"
+    />
+
+    <PinItBlock slug={d.slug} title={d.title} pinImage={d.pinImage} pinTitle={d.pinTitle} pinDescription={d.pinDescription} />
+
+    <div class="prose-nest">
+      <Content />
+    </div>
+
+    <AdSlot format="in-article" />
+
+    {hasProducts && (
+      <section class="mt-12">
+        <h2 class="font-display text-3xl font-semibold">What we used (and would buy again)</h2>
+        <div class="mt-6 grid gap-5 sm:grid-cols-2">
+          {d.products!.map((p) => (
+            <div class="card-lift overflow-hidden rounded-3xl border border-sand/70 bg-white">
+              <img src={p.image} alt={p.name} loading="lazy" width="700" height="700" class="aspect-square w-full object-cover" />
+              <div class="p-5">
+                <h3 class="font-display text-lg font-semibold leading-snug">{p.name}</h3>
+                <p class="mt-1.5 text-sm leading-relaxed text-cocoa">{p.note}</p>
+                <a href={p.url} target="_blank" rel="noopener noreferrer sponsored" class="mt-4 inline-flex min-h-11 items-center rounded-full bg-terracotta px-5 text-sm font-semibold text-white transition-colors hover:bg-terracotta-dark">
+                  Check price
+                </a>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+    )}
+
+    {d.faq.length > 0 && (
+      <section class="mt-14">
+        <h2 class="font-display text-3xl font-semibold">Questions, answered</h2>
+        <div class="mt-5 divide-y divide-sand rounded-3xl border border-sand bg-white px-6">
+          {d.faq.map((f) => (
+            <details class="faq-item py-1.5">
+              <summary class="font-display text-lg font-semibold">
+                <span>{f.q}</span>
+                <span class="faq-chevron text-2xl leading-none text-terracotta">+</span>
+              </summary>
+              <p class="pb-5 leading-relaxed text-cocoa">{f.a}</p>
+            </details>
+          ))}
+        </div>
+      </section>
+    )}
+
+    <!-- Author box -->
+    <aside class="mt-12 flex items-start gap-4 rounded-3xl border border-sand bg-beige/60 p-6">
+      <span class="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-terracotta font-display text-xl font-bold text-white">SN</span>
+      <div>
+        <p class="font-display text-lg font-semibold">By the {siteConfig.publisher.authorName}</p>
+        <p class="mt-1 text-sm leading-relaxed text-cocoa">{siteConfig.publisher.authorBio}</p>
+      </div>
+    </aside>
+
+    <PinItBlock slug={d.slug} title={d.title} pinImage={d.pinImage} pinTitle={d.pinTitle} pinDescription={d.pinDescription} />
+  </article>
+
+  <!-- Related -->
+  <section class="mx-auto max-w-6xl px-4 pt-8 sm:px-6">
+    <h2 class="font-display text-3xl font-semibold">Keep nesting</h2>
+    <div class="mt-7 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      {related.map((a) => (
+        <ArticleCard slug={a.data.slug} title={a.data.title} description={a.data.description} category={a.data.category} heroImage={a.data.heroImage} date={a.data.date} />
+      ))}
+    </div>
+  </section>
+</BaseLayout>

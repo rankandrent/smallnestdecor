@@ -1,0 +1,38 @@
+---
+import { siteConfig } from '../site.config';
+
+interface Props {
+  slug: string;
+  title: string;
+  pinImage: string;
+  pinTitle: string;
+  pinDescription: string;
+}
+const { slug, pinImage, pinTitle, pinDescription } = Astro.props;
+const articleUrl = `${siteConfig.url}/blog/${slug}`;
+const pinUrl = `https://www.pinterest.com/pin/create/button/?url=${encodeURIComponent(articleUrl)}&media=${encodeURIComponent(siteConfig.url + pinImage)}&description=${encodeURIComponent(pinDescription)}`;
+---
+
+<aside class="my-10 flex flex-col items-center gap-5 rounded-3xl border border-sand bg-beige/70 p-6 sm:flex-row sm:p-8">
+  <img
+    src={pinImage}
+    alt={pinTitle}
+    loading="lazy"
+    width="200"
+    height="300"
+    class="aspect-[2/3] w-40 shrink-0 rounded-2xl object-cover shadow-md sm:w-44"
+  />
+  <div class="text-center sm:text-left">
+    <p class="text-xs font-semibold uppercase tracking-widest text-terracotta-dark">Save it for later</p>
+    <p class="mt-2 font-display text-2xl font-semibold leading-snug">{pinTitle}</p>
+    <p class="mt-2 text-sm leading-relaxed text-cocoa">{pinDescription}</p>
+    <a
+      href={pinUrl}
+      target="_blank"
+      rel="noopener noreferrer"
+      class="mt-4 inline-flex min-h-11 items-center rounded-full bg-[#e60023] px-6 text-sm font-semibold text-white transition-transform hover:scale-[1.03]"
+    >
+      📌 Pin it on Pinterest
+    </a>
+  </div>
+</aside>

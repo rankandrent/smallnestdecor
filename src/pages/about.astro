@@ -1,0 +1,60 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { siteConfig } from '../site.config';
+---
+
+<BaseLayout title="About" description="What SmallNestDecor is, who it is for, and how we choose the ideas we publish.">
+  <section class="mx-auto max-w-3xl px-4 pt-12 sm:px-6">
+    <p class="text-xs font-semibold uppercase tracking-[0.2em] text-terracotta-dark">Hello, small home</p>
+    <h1 class="mt-3 font-display text-4xl font-semibold sm:text-5xl">About SmallNestDecor</h1>
+
+    <div class="prose-nest mt-8">
+      <p>
+        SmallNestDecor exists for one simple reason: most decor advice is written for
+        houses — with spare rooms, renovation budgets, and walls you are allowed to
+        drill into. We write for the rest of us. Our readers live in studios,
+        one-bedroom apartments, first small homes, and rentals where the lease says
+        no in three different places.
+      </p>
+      <h2>Who this is for</h2>
+      <p>
+        If you have ever measured a sofa against an elevator door, stored the
+        suitcases under the bed, or wondered which white paint will not turn your
+        north-facing living room blue — you are our people. Our ideas assume real
+        floor plans, real budgets, and usually a landlord.
+      </p>
+      <h2>How we choose ideas</h2>
+      <p>
+        Every guide on SmallNestDecor has to pass three tests. Does it work in a
+        genuinely small space — not a "small" showroom? Can it be done without
+        permanent changes, or is the permanent part honestly flagged? And would we
+        spend our own money on it, in that order? Ideas that fail a test do not get
+        published, however pretty they are.
+      </p>
+      <h2>A note on our images</h2>
+      <p>
+        Many of the rooms you will see here are <strong>AI-generated inspiration
+        renders</strong>, created to show a color, a layout, or a mood as clearly as
+        possible. They are illustrations of ideas — not photographs of real homes,
+        and never a promise that a specific product looks a certain way. Where a
+        guide depends on a real product, we say so and link to the retailer so you
+        can judge the real photos yourself. We would rather be honest about an
+        image than impressive with one.
+      </p>
+      <h2>Say hello</h2>
+      <p>
+        Questions, corrections, or a tiny room you are proud of? Write to us at
+        <a href={`mailto:${siteConfig.email}`}>{siteConfig.email}</a> or use the
+        <a href="/contact"> contact page</a>. We read everything.
+      </p>
+    </div>
+
+    <aside class="mt-12 flex items-start gap-4 rounded-3xl border border-sand bg-beige/60 p-6">
+      <span class="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-terracotta font-display text-xl font-bold text-white">SN</span>
+      <div>
+        <p class="font-display text-lg font-semibold">The {siteConfig.publisher.authorName}</p>
+        <p class="mt-1 text-sm leading-relaxed text-cocoa">{siteConfig.publisher.authorBio}</p>
+      </div>
+    </aside>
+  </section>
+</BaseLayout>

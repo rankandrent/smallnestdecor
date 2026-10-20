@@ -1,0 +1,31 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { siteConfig } from '../site.config';
+---
+
+<BaseLayout title="Privacy Policy" description="How SmallNestDecor collects, uses and protects information about its visitors.">
+  <section class="mx-auto max-w-3xl px-4 pt-12 sm:px-6">
+    <h1 class="font-display text-4xl font-semibold">Privacy Policy</h1>
+    <p class="mt-3 text-sm text-cocoa">Last updated: October 20, 2026</p>
+    <div class="prose-nest mt-6">
+      <p>This Privacy Policy explains what information {siteConfig.name} ("we", "us") collects when you visit {siteConfig.url}, and how that information is used. By using this website you agree to the practices described here.</p>
+      <h2>Information we collect</h2>
+      <p>We collect information in two ways. First, analytics information: like most websites, we use analytics tools (such as Google Analytics, when enabled) that collect anonymous usage data including pages visited, approximate location, device type, and how you found us. This data is aggregated and does not identify you personally. Second, information you give us: if you email us or use the contact form, we receive your name, email address, and the contents of your message.</p>
+      <h2>Cookies</h2>
+      <p>This site and third parties we work with — including advertising partners such as Google AdSense and, in future, Mediavine or Raptive — may use cookies and similar technologies to serve and measure advertising, remember preferences, and understand traffic. Advertising cookies may be used to show ads based on your visits to this and other websites. You can disable cookies in your browser settings at any time; the site will still work.</p>
+      <h2>How we use information</h2>
+      <ul>
+        <li>To operate, maintain, and improve the website and its content.</li>
+        <li>To respond to messages you send us.</li>
+        <li>To measure readership so we know which small-space topics help most.</li>
+        <li>To display advertising that keeps the site free to read.</li>
+      </ul>
+      <h2>Sharing</h2>
+      <p>We do not sell your personal information. We share limited data with the service providers that make the site run (hosting, analytics, advertising networks), only as needed for them to do their work, and as required by law.</p>
+      <h2>Your choices</h2>
+      <p>You may opt out of personalised advertising through your browser settings, Google's Ad Settings, or industry opt-out pages. If you have emailed us and would like that correspondence deleted, write to <a href={`mailto:${siteConfig.email}`}>{siteConfig.email}</a> and we will remove it.</p>
+      <h2>Changes</h2>
+      <p>We may update this policy as the site grows — for example when a new advertising partner is added. The current version will always live on this page with its date at the top.</p>
+    </div>
+  </section>
+</BaseLayout>

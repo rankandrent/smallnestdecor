@@ -1,0 +1,98 @@
+@import "tailwindcss";
+
+@theme {
+  --color-cream: #faf7f2;
+  --color-beige: #f1eae0;
+  --color-sand: #e5dac8;
+  --color-terracotta: #c4674a;
+  --color-terracotta-dark: #a9502f;
+  --color-charcoal: #2b2622;
+  --color-cocoa: #57493d;
+  --font-serif: "Fraunces Variable", "Fraunces", Georgia, "Times New Roman", serif;
+  --font-sans: "Inter Variable", "Inter", ui-sans-system, system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-cream);
+  color: var(--color-charcoal);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, .font-display {
+  font-family: var(--font-serif);
+}
+
+/* Article body typography (rendered Markdown) */
+.prose-nest {
+  font-size: 1.075rem;
+  line-height: 1.8;
+  color: #3a332c;
+}
+.prose-nest > p { margin: 0 0 1.35em; }
+.prose-nest h2 {
+  font-family: var(--font-serif);
+  font-size: 1.65rem;
+  line-height: 1.25;
+  font-weight: 600;
+  color: var(--color-charcoal);
+  margin: 1.9em 0 0.6em;
+}
+.prose-nest h3 {
+  font-family: var(--font-serif);
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--color-charcoal);
+  margin: 1.6em 0 0.5em;
+}
+.prose-nest ul, .prose-nest ol { margin: 0 0 1.35em; padding-left: 1.4em; }
+.prose-nest ul { list-style: disc; }
+.prose-nest ol { list-style: decimal; }
+.prose-nest li { margin-bottom: 0.45em; }
+.prose-nest a {
+  color: var(--color-terracotta-dark);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.prose-nest img {
+  border-radius: 1rem;
+  margin: 1.6em auto;
+  width: 100%;
+  height: auto;
+}
+.prose-nest strong { color: var(--color-charcoal); }
+.prose-nest blockquote {
+  border-left: 3px solid var(--color-terracotta);
+  padding-left: 1.1em;
+  margin: 1.6em 0;
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  color: var(--color-cocoa);
+}
+
+/* Cards lift on hover (house rule: interactive cards must visibly respond) */
+.card-lift {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.card-lift:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 38px -18px rgba(43, 38, 34, 0.35);
+}
+
+/* FAQ details/summary */
+.faq-item summary {
+  cursor: pointer;
+  list-style: none;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary .faq-chevron { transition: transform 0.2s ease; }
+.faq-item[open ] summary .faq-chevron { transform: rotate(45deg); }

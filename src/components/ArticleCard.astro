@@ -1,0 +1,39 @@
+---
+import { categoryBySlug } from '../data/categories';
+
+interface Props {
+  slug: string;
+  title: string;
+  description: string;
+  category: string;
+  heroImage: string;
+  date: Date;
+}
+const { slug, title, description, category, heroImage, date } = Astro.props;
+const cat = categoryBySlug(category);
+const dateStr = date.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+---
+
+<article class="card-lift group overflow-hidden rounded-3xl border border-sand/70 bg-white" data-category={category}>
+  <a href={`/blog/${slug}`} class="block">
+    <div class="aspect-[3/2] overflow-hidden">
+      <img
+        src={heroImage}
+        alt={title}
+        loading="lazy"
+        width="600"
+        height="400"
+        class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+      />
+    </div>
+    <div class="p-5">
+      <p class="flex items-center gap-2 text-[11px] font-semibold uppercase tracking-widest text-terracotta-dark">
+        <span>{cat.shortName}</span>
+        <span class="text-cocoa/50 normal-case tracking-normal">· {dateStr}</span>
+      </p>
+      <h3 class="mt-2 font-display text-xl font-semibold leading-snug">{title}</h3>
+      <p class="mt-2 line-clamp-2 text-sm leading-relaxed text-cocoa">{description}</p>
+      <span class="mt-4 inline-block text-sm font-semibold text-terracotta-dark">Read the ideas →</span>
+    </div>
+  </a>
+</article>

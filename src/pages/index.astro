@@ -1,0 +1,123 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ArticleCard from '../components/ArticleCard.astro';
+import AdSlot from '../components/AdSlot.astro';
+import { categories } from '../data/categories';
+import { siteConfig } from '../site.config';
+
+const articles = (await getCollection('articles', ({ data }) => !data.draft))
+  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+
+const tiles = categories.slice(0, 6);
+const latest = articles.slice(0, 9);
+
+const popularColors = [
+  { name: 'Agreeable Gray', brand: 'Sherwin-Williams', hex: '#D1C7B7' },
+  { name: 'Alabaster', brand: 'Sherwin-Williams', hex: '#EDEAE0' },
+  { name: 'Evergreen Fog', brand: 'Sherwin-Williams', hex: '#95978A' },
+  { name: 'White Dove', brand: 'Benjamin Moore', hex: '#F0EDE6' },
+  { name: 'Accessible Beige', brand: 'Sherwin-Williams', hex: '#D6C7B2' },
+  { name: 'Sea Salt', brand: 'Sherwin-Williams', hex: '#CDD2CA' },
+];
+---
+
+<BaseLayout title={siteConfig.name} description={siteConfig.description} ogImage="/images/hero-home.svg">
+  <!-- Hero -->
+  <section class="mx-auto max-w-6xl px-4 pt-10 sm:px-6 sm:pt-14">
+    <div class="grid items-center gap-10 lg:grid-cols-2">
+      <div>
+        <p class="text-xs font-semibold uppercase tracking-[0.2em] text-terracotta-dark">Decor · Paint · Storage — for small homes</p>
+        <h1 class="mt-4 font-display text-4xl font-semibold leading-[1.08] sm:text-5xl lg:text-[3.4rem]">
+          Small spaces,<br />beautifully lived in.
+        </h1>
+        <p class="mt-5 max-w-lg text-lg leading-relaxed text-cocoa">
+          Honest, renter-friendly ideas for apartments and first small homes:
+          paint colors that open a room up, storage that disappears, and decor
+          that earns every inch it takes.
+        </p>
+        <div class="mt-7 flex flex-wrap gap-3">
+          <a href="/blog" class="inline-flex min-h-12 items-center rounded-full bg-terracotta px-7 font-semibold text-white transition-colors hover:bg-terracotta-dark">
+            Browse ideas
+          </a>
+          <a href="/category/paint-colors" class="inline-flex min-h-12 items-center rounded-full border border-charcoal/20 bg-white/60 px-7 font-semibold transition-colors hover:border-terracotta hover:text-terracotta-dark">
+            Find your paint color
+          </a>
+        </div>
+      </div>
+      <div class="overflow-hidden rounded-[2rem] shadow-xl">
+        <img src="/images/hero-home.svg" alt="A warm, light-filled small living room" width="1400" height="1000" class="aspect-[7/5] w-full object-cover" fetchpriority="high" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Category tiles -->
+  <section class="mx-auto max-w-6xl px-4 pt-16 sm:px-6">
+    <div class="flex items-end justify-between gap-4">
+      <h2 class="font-display text-3xl font-semibold">Start with a room — or a problem</h2>
+      <a href="/blog" class="hidden shrink-0 text-sm font-semibold text-terracotta-dark sm:block">All ideas →</a>
+    </div>
+    <div class="mt-7 grid grid-cols-2 gap-4 lg:grid-cols-3">
+      {tiles.map((c) => (
+        <a href={`/category/${c.slug}`} class="card-lift group relative block overflow-hidden rounded-3xl">
+          <img src={c.image} alt={c.name} loading="lazy" width="900" height="675" class="aspect-[4/3] w-full object-cover transition-transform duration-500 group-hover:scale-105" />
+          <span class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-charcoal/85 via-charcoal/40 to-transparent p-5 pt-14">
+            <span class="block font-display text-xl font-semibold text-white">{c.name}</span>
+            <span class="mt-0.5 block text-sm text-white/85">{c.tagline}</span>
+          </span>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <AdSlot format="leaderboard" />
+
+  <!-- Latest articles -->
+  <section class="mx-auto max-w-6xl px-4 pt-6 sm:px-6">
+    <h2 class="font-display text-3xl font-semibold">Fresh from the nest</h2>
+    <div class="mt-7 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      {latest.map((a) => (
+        <ArticleCard slug={a.data.slug} title={a.data.title} description={a.data.description} category={a.data.category} heroImage={a.data.heroImage} date={a.data.date} />
+      ))}
+    </div>
+  </section>
+
+  <!-- Popular paint colors strip -->
+  <section class="mt-16 bg-beige/70 py-14">
+    <div class="mx-auto max-w-6xl px-4 sm:px-6">
+      <div class="flex flex-wrap items-end justify-between gap-3">
+        <div>
+          <p class="text-xs font-semibold uppercase tracking-[0.2em] text-terracotta-dark">Reader favourites</p>
+          <h2 class="mt-2 font-display text-3xl font-semibold">Popular paint colors for small rooms</h2>
+        </div>
+        <a href="/category/paint-colors" class="text-sm font-semibold text-terracotta-dark">All paint guides →</a>
+      </div>
+      <div class="mt-8 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-6">
+        {popularColors.map((c) => (
+          <a href="/blog/paint-colors-that-make-a-small-living-room-look-bigger" class="card-lift block overflow-hidden rounded-2xl border border-sand/70 bg-white">
+            <span class="block h-20" style={`background:${c.hex}`}></span>
+            <span class="block p-3.5">
+              <span class="block font-display text-[15px] font-semibold leading-tight">{c.name}</span>
+              <span class="mt-0.5 block text-xs text-cocoa">{c.brand}</span>
+            </span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- About strip -->
+  <section class="mx-auto max-w-6xl px-4 pt-16 sm:px-6">
+    <div class="rounded-[2rem] border border-sand bg-white p-8 text-center sm:p-12">
+      <p class="font-display text-2xl font-semibold sm:text-3xl">Made for the way small homes actually live.</p>
+      <p class="mx-auto mt-3 max-w-2xl leading-relaxed text-cocoa">
+        SmallNestDecor is written for renters and small-space lovers — no
+        renovations, no forty-step projects, no pretending the closet is a
+        walk-in. Just warm, workable ideas, one room at a time.
+      </p>
+      <a href="/about" class="mt-6 inline-flex min-h-11 items-center rounded-full border border-charcoal/20 px-6 font-semibold transition-colors hover:border-terracotta hover:text-terracotta-dark">
+        More about us
+      </a>
+    </div>
+  </section>
+</BaseLayout>

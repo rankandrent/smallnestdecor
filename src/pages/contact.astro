@@ -1,0 +1,47 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { siteConfig } from '../site.config';
+---
+
+<BaseLayout title="Contact" description="Get in touch with the SmallNestDecor editors — questions, corrections, and small rooms you are proud of.">
+  <section class="mx-auto max-w-3xl px-4 pt-12 sm:px-6">
+    <p class="text-xs font-semibold uppercase tracking-[0.2em] text-terracotta-dark">We read everything</p>
+    <h1 class="mt-3 font-display text-4xl font-semibold sm:text-5xl">Contact us</h1>
+    <p class="mt-4 leading-relaxed text-cocoa">
+      The fastest way to reach us is email:
+      <a href={`mailto:${siteConfig.email}`} class="font-semibold text-terracotta-dark underline underline-offset-4">{siteConfig.email}</a>.
+      Or send a message with the form below — we usually reply within a few days.
+    </p>
+
+    <form id="contact-form" class="mt-9 space-y-5 rounded-3xl border border-sand bg-white p-6 sm:p-8" method="post" action="#">
+      <div>
+        <label for="cf-name" class="text-sm font-semibold">Your name</label>
+        <input id="cf-name" name="name" type="text" required class="mt-2 min-h-12 w-full rounded-xl border border-sand bg-cream px-4 text-[15px] outline-none focus:border-terracotta" placeholder="Jane Nest" />
+      </div>
+      <div>
+        <label for="cf-email" class="text-sm font-semibold">Your email</label>
+        <input id="cf-email" name="email" type="email" required class="mt-2 min-h-12 w-full rounded-xl border border-sand bg-cream px-4 text-[15px] outline-none focus:border-terracotta" placeholder="you@example.com" />
+      </div>
+      <div>
+        <label for="cf-message" class="text-sm font-semibold">Message</label>
+        <textarea id="cf-message" name="message" required rows="6" class="mt-2 w-full rounded-xl border border-sand bg-cream px-4 py-3 text-[15px] outline-none focus:border-terracotta" placeholder="Tell us about your small space…"></textarea>
+      </div>
+      <button type="submit" class="inline-flex min-h-12 items-center rounded-full bg-terracotta px-7 font-semibold text-white transition-colors hover:bg-terracotta-dark">
+        Send message
+      </button>
+      <p id="cf-success" class="hidden rounded-xl bg-beige px-4 py-3 text-sm font-medium text-cocoa">
+        Thank you — your message is on its way. We will get back to you soon.
+      </p>
+    </form>
+
+    <script is:inline>
+      document.getElementById('contact-form').addEventListener('submit', function (e) {
+        e.preventDefault();
+        // v1: no backend yet — acknowledge locally. Wire to a form
+        // endpoint (e.g. Cloudflare Pages Function) before launch traffic.
+        document.getElementById('cf-success').classList.remove('hidden');
+        this.reset();
+      });
+    </script>
+  </section>
+</BaseLayout>

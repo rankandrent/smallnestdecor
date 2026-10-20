@@ -1,0 +1,25 @@
+---
+import { siteConfig } from '../site.config';
+
+/**
+ * Ad placeholder. Renders NOTHING while siteConfig.ads.enabled is false.
+ * When an ad network is onboarded and the flag is flipped, it reserves a
+ * fixed-height slot (prevents layout shift) for the network to fill.
+ */
+interface Props {
+  format?: 'leaderboard' | 'in-article' | 'rectangle';
+}
+const { format = 'in-article' } = Astro.props;
+const heights = { leaderboard: 110, 'in-article': 280, rectangle: 250 };
+---
+
+{siteConfig.ads.enabled && (
+  <div
+    class="ad-slot mx-auto my-8 flex w-full max-w-3xl items-center justify-center rounded-xl border border-dashed border-sand bg-beige/50 text-xs uppercase tracking-widest text-cocoa/60"
+    style={`min-height:${heights[format]}px`}
+    data-ad-format={format}
+    aria-hidden="true"
+  >
+    Advertisement
+  </div>
+)}
