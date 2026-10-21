@@ -23,22 +23,36 @@ faq:
   - q: "What if an adhesive strip pulls off a bit of paint anyway?"
     a: "It happens occasionally, usually on old or matte paint. Stop, and remove any remaining strips the slow way, pulling straight down. For a small flake, press a dab of filler into the spot, let it dry, sand lightly and touch up with matching paint; most rentals use a standard white, and a small sample pot costs very little. Photograph the repair alongside your move-in photos."
 products:
-  - name: "Command Large Picture Hanging Strips, 14 Pairs (holds 15 lb)"
-    note: "The gallery-wall workhorse. Four pairs hold up to 16 lb (about 7 kg), and each strip removes with one straight-down pull."
+  - name: "Command Large Picture Hanging Strips, 14 Pairs (Holds up to 15 lb)"
+    rating: "4.6 out of 5 stars · 111,543 ratings"
+    note: "The category-defining no-drill pick: gallery walls and frames up to 15 lb with zero holes, and strips that remove cleanly."
     url: "https://www.amazon.com/dp/B073XR4X72?tag=mikahtech-20"
     image: "https://m.media-amazon.com/images/I/41SK3QqjLKL.jpg"
-  - name: "Art3d 10-Pack Subway Tiles Peel and Stick Backsplash, White, 12 x 12 in"
-    note: "Kitchen backsplash in an afternoon. Wipeable and moisture resistant, and they peel off again with help from a hairdryer."
-    url: "https://www.amazon.com/dp/B08PP2NZMD?tag=mikahtech-20"
-    image: "https://m.media-amazon.com/images/I/619My26N6IL.jpg"
-  - name: "Amazon Basics No-Drill Tension Curtain Rod, 24 to 36 in, Black"
-    note: "Spring-loaded, rubber-ended, zero hardware. Adjusts to fit 24 to 36 inch openings and holds curtains up to 7 lb."
-    url: "https://www.amazon.com/dp/B073Q81J8R?tag=mikahtech-20"
-    image: "https://m.media-amazon.com/images/I/31bm+bZDg4L.jpg"
-  - name: "Simple Houseware 24-Pocket Clear Over-Door Organizer, Gray"
-    note: "Instant storage on any door: shoes, cleaning supplies, or the hallway drop. Hangs on four metal hooks, no screws."
-    url: "https://www.amazon.com/dp/B01D58DRVC?tag=mikahtech-20"
-    image: "https://m.media-amazon.com/images/I/4131dBobQtL.jpg"
+  - name: "Command Medium White Hooks, 20 Hooks with 24 Strips"
+    rating: "4.7 out of 5 stars · 11,710 ratings"
+    note: "Not just for decor: a verified reviewer hung 24 pairs of shoes on a wasted closet wall with these hooks."
+    url: "https://www.amazon.com/dp/B018IZAME2?tag=mikahtech-20"
+    image: "https://m.media-amazon.com/images/I/71gZfZ995mL._AC_SL1500_.jpg"
+  - name: "Art3d Peel-and-Stick Backsplash Subway Tile, 102-Pack, Glossy White"
+    rating: "4.3 out of 5 stars · 2,466 ratings"
+    note: "A full subway-tile backsplash look with no grout and no tools, made to peel back off on move-out day."
+    url: "https://www.amazon.com/dp/B0CBPPDKVD?tag=mikahtech-20"
+    image: "https://m.media-amazon.com/images/I/61ijDioiVOL._AC_SL1500_.jpg"
+  - name: "RoomMates Peel-and-Stick Wallpaper, Beige Batik Tropical Leaf"
+    rating: "4.3 out of 5 stars · 736 ratings"
+    note: "The wallpaper pick: RoomMates peel-and-stick is designed to remove cleanly, which is the core renter requirement."
+    url: "https://www.amazon.com/dp/B07XJ71V9P?tag=mikahtech-20"
+    image: "https://m.media-amazon.com/images/I/71pMmRwLJjL._AC_SL1000_.jpg"
+  - name: "Kenney Fast Fit No-Measure Curtain Rod Brackets, 5/8 in, Matte Black"
+    rating: "4.3 out of 5 stars · 5,618 ratings"
+    note: "Brackets that mount on the window frame with no drilling and no measuring; a top reviewer called them a hassle-saving idea."
+    url: "https://www.amazon.com/dp/B08CSL9B2X?tag=mikahtech-20"
+    image: "https://m.media-amazon.com/images/I/61TbayDTXqL._AC_SL1500_.jpg"
+  - name: "SISELBA Spring Tension Curtain Rod, 32-76 in, White"
+    rating: "4.5 out of 5 stars · 1,361 ratings"
+    note: "The classic tension-rod answer for windows and doorways; a verified reviewer notes it needs no drilling or tools."
+    url: "https://www.amazon.com/dp/B0FG2MFDQZ?tag=mikahtech-20"
+    image: "https://m.media-amazon.com/images/I/51q4q36MG9L._AC_SL1500_.jpg"
 ---
 
 Every renter knows the feeling: a home that is technically yours from the first to the last of the month, and visually someone else's the whole time. The beige is not your beige. The walls are bare because the lease used the word "holes" in bold. Here is the good news the decor industry took a decade to learn: almost everything a homeowner does with a drill, a renter can now do with adhesion, tension and gravity, and undo in one afternoon, deposit fully intact.
@@ -57,7 +71,7 @@ Rental kitchens are where hope goes to be beige. Peel-and-stick tiles, real ston
 
 ## 3. Curtains on tension rods, hung high
 
-Nothing dates a rental like the landlord's blinds, and nothing lifts a room like curtains that start near the ceiling. A tension rod inside the frame needs no permission slip at all; clamp or adhesive brackets let you mount wider if the frame allows. Choose a warm white or a soft color from your palette, let them just kiss the floor, and the windows, and the room, grow about twenty centimeters in everyone's estimation.
+Nothing dates a rental like the landlord's blinds, and nothing lifts a room like curtains that start near the ceiling. A tension rod inside the frame needs no permission slip at all; clamp or adhesive brackets let you mount wider if the frame allows. Choose [a warm white that never turns yellow](/blog/best-warm-white-paint-colors-for-apartments) or a soft color from [your whole-apartment palette of 5 colors](/blog/whole-apartment-color-palette-5-colors), let them just kiss the floor, and the windows, and the room, grow about twenty centimeters in everyone's estimation.
 
 ## 4. Swap the light bulbs, then the shades
 

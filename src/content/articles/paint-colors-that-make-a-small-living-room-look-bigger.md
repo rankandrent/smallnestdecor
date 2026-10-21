@@ -22,6 +22,37 @@ faq:
     a: "Eggshell or satin. They reflect a little light, which helps the room feel larger, and they wipe clean, important when furniture sits close to walls. Flat paint hides flaws but absorbs light and marks easily in tight spaces."
   - q: "How do I test a paint color properly in a small room?"
     a: "Paint two large swatches (at least 30 × 30 cm) on two different walls, and live with them for a full day. Check them in morning light, afternoon light and lamplight. In small rooms the same color can read warm at noon and gray at night, and the swatch is the only honest preview you get."
+products:
+  - name: "ScotchBlue Original Multi-Surface Painter's Tape, 1.88 in x 60 yd (2090-48NC)"
+    rating: "4.8 out of 5 stars · 14,089 ratings"
+    note: "The default tape for crisp trim lines: it seals well and peels off clean, which is the make-or-break step when a renter paints one wall."
+    url: "https://www.amazon.com/dp/B00004Z4DU?tag=mikahtech-20"
+    image: "https://m.media-amazon.com/images/I/511xvLascFL._SL1000_.jpg"
+  - name: "FrogTape Multi-Surface Painter's Tape with PaintBlock, 0.94 in x 60 yd"
+    rating: "4.7 out of 5 stars · 10,721 ratings"
+    note: "Reviewers rate it best for sharp lines: the PaintBlock edge seal is the fix for paint bleeding under the tape."
+    url: "https://www.amazon.com/dp/B002Z8HB2A?tag=mikahtech-20"
+    image: "https://m.media-amazon.com/images/I/81SghpCoi9L._SL1500_.jpg"
+  - name: "Bates Paint Roller Kit, 19-Piece Set with Microfiber Sleeves and Frame"
+    rating: "4.6 out of 5 stars · 13,823 ratings"
+    note: "Everything needed to roll a test color or a full wall in one box; reviewers praise the even coat from the microfiber sleeves."
+    url: "https://www.amazon.com/dp/B01MRTEOHI?tag=mikahtech-20"
+    image: "https://m.media-amazon.com/images/I/81l+j3SkQkL._AC_SL1500_.jpg"
+  - name: "Pro Grade Paint Brush Set for Walls, Trim and Stain, 5-Piece"
+    rating: "4.6 out of 5 stars · 72,381 ratings"
+    note: "The cutting-in partner to the tape: a useful spread of sizes for edges and trim, at a price reviewers call an easy yes."
+    url: "https://www.amazon.com/dp/B07JHQ4L4F?tag=mikahtech-20"
+    image: "https://m.media-amazon.com/images/I/61KC7YmX0CL._AC_SL1000_.jpg"
+  - name: "ScotchBlue Pre-Taped Painter's Plastic with Dispenser, 48 in x 30 yd"
+    rating: "4.5 out of 5 stars · 2,900 ratings"
+    note: "Tape and masking film in one dispenser pass, so floors and furniture in a furnished small room stay protected while painting."
+    url: "https://www.amazon.com/dp/B00AYB8T6W?tag=mikahtech-20"
+    image: "https://m.media-amazon.com/images/I/71BtA3Kmu2L._SL1500_.jpg"
+  - name: "Mighty Board Minis Paint Color Test Panels, 12 x 9 in, Set of 5"
+    rating: "4.3 out of 5 stars · 36 ratings"
+    note: "Paint the panel, not the wall: reviewers use these boards to live with a color in different light before committing."
+    url: "https://www.amazon.com/dp/B0D3C8SVYC?tag=mikahtech-20"
+    image: "https://m.media-amazon.com/images/I/41423rsCWLL._AC_SL1000_.jpg"
 ---
 
 A small living room has one unfair advantage: it takes about two gallons of paint to completely change how it feels. No new sofa, no renovation, no landlord drama, just a color that makes the walls step back and the light stay a little longer. The trick is choosing a shade that works *with* a small footprint instead of apologizing for it.
@@ -43,6 +74,8 @@ Alabaster is a touch creamier than White Dove and famously kind to north-facing 
 Swiss Coffee is the coziest of the three, a warm, slightly deep white that makes a small living room feel like a reading nook in the best way. It is a wonderful choice when your furniture is white or light gray, because it gives the room a gentle outline. **Watch out:** it has real depth, so in a room with one small window it may read beige rather than white. That is a feature if you want warmth, a bug if you want bright.
 
 ![A small living room in a warm white shade with soft daylight](/images/articles/paint-colors-room-1.svg)
+
+If warm white is where you are headed, treat the three above as the shortlist, not the whole field. Our dedicated guide to [the best warm white paint colors for apartments](/blog/best-warm-white-paint-colors-for-apartments) compares seven warm whites by undertone and LRV, including how each one survives north-facing apartment light.
 
 ## The greiges and soft neutrals (small-room camouflage)
 
@@ -100,4 +133,4 @@ If painting is not allowed, you can still steal most of the effect, especially a
 4. **Paint the ceiling** the same color or one step lighter to lift the room.
 5. **Use eggshell or satin finish** so the walls give a little light back.
 
-Do that, and your small living room will not just look bigger, it will stop feeling like a compromise at all. And if clutter is the other half of the problem, the [organization systems that give a small living room its space back](/blog/small-living-room-organization-ideas) pick up exactly where the paint leaves off.
+Do that, and your small living room will not just look bigger, it will stop feeling like a compromise at all. And when one room is speaking the right color language, [a whole-apartment color palette in just 5 colors](/blog/whole-apartment-color-palette-5-colors) shows how to carry the same shades through every doorway, so the whole home reads as one calm place. And if clutter is the other half of the problem, the [organization systems that give a small living room its space back](/blog/small-living-room-organization-ideas) pick up exactly where the paint leaves off.
