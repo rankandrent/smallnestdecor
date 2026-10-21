@@ -73,7 +73,7 @@ Alabaster is a touch creamier than White Dove and famously kind to north-facing 
 
 Swiss Coffee is the coziest of the three, a warm, slightly deep white that makes a small living room feel like a reading nook in the best way. It is a wonderful choice when your furniture is white or light gray, because it gives the room a gentle outline. **Watch out:** it has real depth, so in a room with one small window it may read beige rather than white. That is a feature if you want warmth, a bug if you want bright.
 
-![A small living room in a warm white shade with soft daylight](/images/articles/paint-colors-room-1.svg)
+![A small living room in a warm white shade with soft daylight](/images/articles/paint-colors-room-1.webp)
 
 If warm white is where you are headed, treat the three above as the shortlist, not the whole field. Our dedicated guide to [the best warm white paint colors for apartments](/blog/best-warm-white-paint-colors-for-apartments) compares seven warm whites by undertone and LRV, including how each one survives north-facing apartment light.
 
@@ -101,7 +101,7 @@ Sea Salt is a chameleon, a gray-green-blue that shifts with the light and makes 
 
 A soft, grayed sage that somehow makes small rooms feel calm instead of closed in, partly because our eyes read green as "outdoors" and relax the room's edges. It is superb with cream sofas, rattan, and the plants you were going to buy anyway. **Watch out:** it darkens considerably in the evening; lamps with warm bulbs keep it friendly.
 
-![A small living room painted in a soft sage green](/images/articles/paint-colors-room-2.svg)
+![A small living room painted in a soft sage green](/images/articles/paint-colors-room-2.webp)
 
 ### 9. Farrow & Ball Setting Plaster (No. 231)
 
